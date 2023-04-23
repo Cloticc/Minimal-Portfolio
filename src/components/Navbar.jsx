@@ -4,17 +4,15 @@ import React, { useEffect, useState } from "react";
 
 // import DownloadButton from "./downloadButton";
 
-// src\components\downloadCV.jsx
-
-function openDropdown(event, id) {
-  event.preventDefault();
-  var dropdown = document.getElementById(id);
-  if (dropdown.style.display === "block") {
-    dropdown.style.display = "none";
-  } else {
-    dropdown.style.display = "block";
-  }
-}
+// function openDropdown(event, id) {
+//   event.preventDefault();
+//   var dropdown = document.getElementById(id);
+//   if (dropdown.style.display === "block") {
+//     dropdown.style.display = "none";
+//   } else {
+//     dropdown.style.display = "block";
+//   }
+// }
 
 function Navbar() {
   const [theme, setTheme] = useState(null);
@@ -82,55 +80,65 @@ function Navbar() {
         <section className="relative mx-auto">
           <nav className="flex justify-between bg-gray-900 text-white w-screen">
             <div className="px-5 xl:px-12 py-6 flex w-full items-center">
-              <a className="text-3xl font-bold font-heading" href="#">
+              <a className="text-3xl font-bold font-heading" href="/">
                 <img
                   className="h-10"
                   src="https://icons.veryicon.com/png/Application/Enkel/Terminal.png"
                   alt=""
+                  href="/"
                 />
               </a>
 
-              <ul className="md:flex md:flex-wrap px-4 mx-auto font-semibold text-lg font-heading space-x-10 sm:space-x-4">
+              <ul className="flex px-4 mx-auto font-semibold text-lg font-heading ">
                 <li>
                   <a
-                    className="hover:text-gray-200 hover:underline px-4 py-2"
-                    href="/"
+                    className="hover:text-gray-200 hover:underline px-4 py-2 "
+                    href="/Minimal-Portfolio/"
                   >
                     Home
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     className="hover:text-gray-200 hover:underline px-4 py-2"
-                    href="/cv"
+                    href="/Minimal-Portfolio/cv"
                   >
                     CV
                   </a>
-                </li>
+                </li> */}
+
+                {/* <li>
+                  <a
+                    className="hover:text-gray-200 hover:underline px-4 py-2 "
+                    href="/Minimal-Portfolio/"
+                  >
+                    Shop
+                  </a>
+                </li> */}
               </ul>
 
               <div className=" xl:flex items-center space-x-5">
                 {/* Download */}
 
-                <div className="flex md:flex-wrap items-center justify-center md:justify-end space-x-4 md:space-x-8 md:mx-4">
+                <div className="flex md:flex-wrap items-center justify-center md:justify-end space-x-4 md:space-x-8 md:mx-4 ">
                   <a
-                    href="https://drive.google.com/file/d/1v_22b24HPRQ74OnEMn-NY5c2rlsWSftA/view"
+                    href="https://drive.google.com/file/d/1jI6pR9Du9RYl433RicUabtIJb0KH4Gdg/view"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-gray-900 border border-transparent rounded-lg active:bg-gray-800 hover:bg-gray-800 focus:outline-none focus:shadow-outline-gray "
+                    className="flex items-center justify-center px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-gray-900 border border-transparent rounded-lg active:bg-gray-800 hover:bg-gray-800 focus:outline-none focus:shadow-outline-gray"
                   >
                     <svg
                       id="arrow"
-                      class="w-6 h-6 mr-2 transition-all group-hover:-translate-y-1"
+                      className="w-6 h-6 mr-2 transition-all group-hover:-translate-y-1 "
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M19 14l-7 7m0 0l-7-7m7 7V3"
                       ></path>
                     </svg>
@@ -157,8 +165,8 @@ function Navbar() {
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       stroke-width="2"
                       d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                     />
@@ -174,8 +182,8 @@ function Navbar() {
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       stroke-width="2"
                       d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                     />
@@ -195,8 +203,8 @@ function Navbar() {
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       stroke-width="2"
                       d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
@@ -214,8 +222,8 @@ function Navbar() {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   stroke-width="2"
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                 />
@@ -234,8 +242,8 @@ function Navbar() {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   stroke-width="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 />

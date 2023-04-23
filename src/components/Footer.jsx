@@ -8,7 +8,7 @@ function Footer() {
           <div className="flex flex-wrap justify-center gap-2">
             <a
               href="https://twitter.com/Clotic_"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+              className="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -21,7 +21,7 @@ function Footer() {
             </a>
             <a
               href="https://www.linkedin.com/in/andreas-isidorsson-457027148/"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+              className="bg-blue-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -36,7 +36,7 @@ function Footer() {
             </a>
             <a
               href="https://www.youtube.com/channel/UCAapQPihoSGKeLb4tcksqCA"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+              className="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
             >
               <svg
                 className="w-5 h-5 fill-current"
@@ -48,7 +48,7 @@ function Footer() {
             </a>
             <a
               href="https://github.com/Cloticc"
-              className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
+              className="bg-gray-800 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
