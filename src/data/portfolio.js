@@ -29,13 +29,13 @@ export default [
     {
         title: "Custom Ability UI",
         description: "An intuitive user interface designed to enable the seamless switching of racial abilities across different races.",
-        imgUrl: "./assets/racial-switch-ui.png",
+        imgUrl: "./public/assets/racialUI2.png",
         stack: [
             { name: "Eluna/Lua", color: "#3767a9" },
 
 
         ],
-        link: "https://github.com/Cloticc/Eluna-scripts/tree/master/AIO%20Scripts/Racial%20switch%20UI",
+        link: "https://github.com/Cloticc/Eluna-scripts/tree/master/AIO%20Scripts/Custom%20Racial%20UI",
     },
     {
         title: "SQLoadout",

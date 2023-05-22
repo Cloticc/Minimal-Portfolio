@@ -104,7 +104,7 @@ function PortfolioItem({ title, description, imgUrl, stack, link }) {
               <img
                 src={imgUrl}
                 alt="my image"
-                className="h-16 w-16 rounded-lg object-cover shadow-sm "
+                className="h-32 w-32 rounded-lg object-contain shadow-sm transition duration-300 transform-gpu hover:scale-150"
               />
             )}
             {/* {imgUrl !== "" ? (
@@ -122,7 +122,7 @@ function PortfolioItem({ title, description, imgUrl, stack, link }) {
               src={imgUrl}
               className="h-16 w-16 rounded-lg object-cover shadow-sm hover:scale-110"
             /> */}
-            <div className="opacity-0 transition duration-300 absolute inset-0 bg-gray-700 hover:opacity-50 flex justify-center items-center"></div>
+            {/* <div className="opacity-0 transition duration-300 absolute inset-0 bg-gray-700 hover:opacity-50 flex justify-center items-center"></div> */}
           </div>
         </div>
       </div>

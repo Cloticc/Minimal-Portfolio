@@ -5,7 +5,7 @@
 
 function Contact() {
   return (
-    <h3 className="text-center border-solid text-4xl"> WIP FIX CONTACT </h3>
+    <h3 className="text-center border-solid text-4xl"> </h3>
 
     //     <div className="flex flex-col mb-10 mx-auto">
     //       <div className="flex justify-center items-center">

@@ -4,7 +4,7 @@ export default [
         title: 'Shop UI',
         duration: 'For emulator',
         details:
-            'Using the Eluna API and Lua, I created a sleek and intuitive user interface that was both simplistic and easy to navigate. This project required careful design and implementation to ensure that the interface was user-friendly and accessible. The final result was a powerful UI that boasted a wide range of features, including the ability to customize the cost of items and spells. With its unique blend of functionality and usability, this UI proved to be a valuable addition to the game, enhancing the overall player experience.',
+            'Using the Eluna API and Lua, I created a sleek and intuitive user interface that was both simplistic and easy to navigate. This project required design and implementation to ensure that the interface was user-friendly and accessible. The final result was a powerful UI that boasted a wide range of features, including the ability to customize the cost of items and spells. With its unique blend of functionality and usability, this UI proved to be a valuable addition to the game, enhancing the overall player experience.',
 
     },
     {
