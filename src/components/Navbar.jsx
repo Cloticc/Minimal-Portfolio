@@ -122,7 +122,7 @@ function Navbar() {
 
                 <div className="flex md:flex-wrap items-center justify-center md:justify-end space-x-4 md:space-x-8 md:mx-4 ">
                   <a
-                    href="https://drive.google.com/file/d/1jI6pR9Du9RYl433RicUabtIJb0KH4Gdg/view"
+                    href="https://drive.google.com/file/d/1CFkPA_yFW8YpGWeL4WSwDFcEKtB1iKV0/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-gray-900 border border-transparent rounded-lg active:bg-gray-800 hover:bg-gray-800 focus:outline-none focus:shadow-outline-gray"

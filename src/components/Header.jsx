@@ -7,7 +7,7 @@ function Information() {
         Andreas Isidorsson
       </h1>
       <p className="text-base md:text-xl mb-3 font-medium">
-        Web developer & game developer
+        A developer that enjoy creating websites, games in my free time.
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold tracking-tight">
         I'm a self-taught web developer & game developer with a passion for

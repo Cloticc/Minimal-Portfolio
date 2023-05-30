@@ -4,7 +4,7 @@ export default [
         title: 'Shop UI',
         duration: 'For emulator',
         details:
-            'Using the Eluna API and Lua, I created a sleek and intuitive user interface that was both simplistic and easy to navigate. This project required design and implementation to ensure that the interface was user-friendly and accessible. The final result was a powerful UI that boasted a wide range of features, including the ability to customize the cost of items and spells. With its unique blend of functionality and usability, this UI proved to be a valuable addition to the game, enhancing the overall player experience.',
+            'I leveraged the power of the Eluna API and Lua programming language to design and implement a highly versatile shop interface. This interface offers users the ability to customize prices for various items using currencies such as gold, honor, and more. Additionally, I incorporated a quantity setup feature, allowing prices to dynamically adjust in real-time based on the desired quantity of items being purchased. Overcoming the challenges associated with integrating the Eluna API and Lua, I successfully developed a user-friendly and intuitive interface that significantly enhanced the overall user experience. ',
 
     },
     {
@@ -25,7 +25,7 @@ export default [
     },
 
     {
-        year: '2022',
+        year: '2022-2023',
         title: 'Automatic Gear SQL',
         duration: 'For emulator',
         details:
@@ -33,11 +33,12 @@ export default [
 
     },
     {
-        year: '2022',
+        year: '2022-2023',
         title: 'Racial UI',
         duration: 'For emulator',
         details:
-            'I used Lua with Eluna API to develop a menu that allows you to switch racial abilities that are all server sided. The project involved designing and implementing a user-friendly interface using HTML, CSS, and Vue.js, as well as collaborating with a back-end developer to ensure a smooth interaction between the interface and the server. The result was an attractive and responsive website that improved the user experience.',
+            'The interface ensures a seamless and intuitive experience by organizing these racial abilities and items into separate tabs. Each tab represents a specific category or type of ability or item, making it easier for players to navigate and select their preferred options. Additionally, to maintain balance and prevent overwhelming choices, the interface incorporates a maximum limit on the number of abilities or items that can be assigned within each tab. The interface ensures a seamless and intuitive experience by organizing these racial abilities and items into separate tabs. Each tab represents a specific category or type of ability or item, making it easier for players to navigate and select their preferred options. Additionally, to maintain balance and prevent overwhelming choices, the interface incorporates a maximum limit on the number of abilities or items that can be assigned within each tab. This limitation encourages players to carefully consider their choices and strategically allocate their available slots to ensure an optimized character build. By setting a maximum limit, the interface promotes thoughtful decision-making, resource management, and adaptability, as players must prioritize which abilities and items best suit their playstyle and the challenges they face in the game. In summary, the interface described in the text offers players a convenient and dynamic means of selecting and switching between available racial abilities and items. By organizing these options into separate tabs and incorporating maximum limits, the interface encourages players to strategically customize their characters capabilities, fostering adaptability and enhancing the overall gameplay experience.',
+
     },
 
     {
