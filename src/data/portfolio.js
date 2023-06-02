@@ -29,7 +29,7 @@ export default [
     {
         title: "Custom Ability UI",
         description: "An intuitive user interface designed to enable the seamless switching of racial abilities across different races.",
-        imgUrl: "./public/assets/racialUI2.png",
+        imgUrl: "./assets/racialUI2.png",
         stack: [
             { name: "Eluna/Lua", color: "#3767a9" },
 
