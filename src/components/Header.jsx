@@ -11,7 +11,7 @@ function Information() {
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold tracking-tight">
         I'm a self-taught web developer & game developer with a passion for
-        technology and learning. I've been coding for over 5~ years. I've worked
+        technology and learning. I've been coding for over ~3 years. I've worked
         with a wide range of technologies and languages, but I'm most passionate
         about Lua @
         <a
