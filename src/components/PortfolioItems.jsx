@@ -1,35 +1,35 @@
 // import React from "react";
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 // import { Title } from "@material-ui/icons";
 
-function FollowMouseBox() {
-  const [xPos, setXPos] = useState(0);
-  const [yPos, setYPos] = useState(0);
+// function FollowMouseBox() {
+//   const [xPos, setXPos] = useState(0);
+//   const [yPos, setYPos] = useState(0);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setXPos(e.pageX);
-      setYPos(e.pageY);
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+//   useEffect(() => {
+//     const handleMouseMove = (e) => {
+//       setXPos(e.pageX);
+//       setYPos(e.pageY);
+//     };
+//     window.addEventListener("mousemove", handleMouseMove);
+//     return () => window.removeEventListener("mousemove", handleMouseMove);
+//   }, []);
 
-  const boxStyle = {
-    position: "absolute",
-    left: xPos,
-    top: yPos,
-    transform: "translate(-50%, -50%)",
-    border: "1px solid #000",
-    borderRadius: "0.5rem",
-    padding: "1rem",
-    backgroundColor: "#fff",
-    boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.2)",
-    zIndex: 10,
-  };
-}
+//   const boxStyle = {
+//     position: "absolute",
+//     left: xPos,
+//     top: yPos,
+//     transform: "translate(-50%, -50%)",
+//     border: "1px solid #000",
+//     borderRadius: "0.5rem",
+//     padding: "1rem",
+//     backgroundColor: "#fff",
+//     boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.2)",
+//     zIndex: 10,
+//   };
+// }
 
 function PortfolioItem({ title, description, imgUrl, stack, link }) {
   const isSingleStack = stack.length === 1;
@@ -100,7 +100,7 @@ function PortfolioItem({ title, description, imgUrl, stack, link }) {
         </div>
         <div className="hidden sm:block sm:shrink-0">
           <div className="relative">
-            {imgUrl !== "" && (
+            {imgUrl !== "" && ( // if imgUrl is not empty, then show the image below
               <img
                 src={imgUrl}
                 alt="my image"
@@ -149,41 +149,3 @@ function PortfolioItem({ title, description, imgUrl, stack, link }) {
 
 export default PortfolioItem;
 
-// <a
-//   href={link}
-//   target="_blank"
-//   rel="noopener noreferrer"
-//   // className="border-2 border-stone-900 dark:border-whiteoverflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-//   className="overflow-hidden rounded-lg shadow-lg"
-// >
-//   <img
-//     src={imgUrl}
-//     alt="portfolio"
-//     className="w-full h-36 md:h-48 object-cover cursor-pointer "
-//   />
-
-//   <div className="w-full p-4">
-//     <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold">
-//       {title}
-//     </h3>
-
-//     <p className="text-sm md:text-base text-gray-700 dark:text-white mb-4 font-medium">
-//       {description}
-//     </p>
-
-//     <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white ">
-//       {stack.map((item, index) => (
-//         <a
-//           key={index}
-//           className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md hover:bg-stone-900 dark:hover:bg-white hover:text-white dark:hover:text-stone-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-//           href="#"
-//           onClick={() =>
-//             window.open(`https://www.google.com/search?q=${item}`, "_blank")
-//           }
-//         >
-//           {item}
-//         </a>
-//       ))}
-//     </p>
-//   </div>
-// </a>

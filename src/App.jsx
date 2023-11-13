@@ -1,16 +1,24 @@
 // import React, { useEffect, useState } from "react";
 // import { Route, Routes } from "react-router-dom";
+
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Contact from "./components/Contact";
-// import CvIndex from "./pages/CvIndex.jsx";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-// import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Time from "./components/Time";
 import Title from "./components/Title";
+
+// import CvIndex from "./pages/CvIndex.jsx";
+
+
+// import Home from "./pages/Home";
+
+
+
+
 
 function App() {
   return (
