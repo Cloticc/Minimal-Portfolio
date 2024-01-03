@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 const handleMouseMove = (event) => {
   let { offsetX, offsetY } = event.nativeEvent;
   const { offsetWidth, offsetHeight } = event.currentTarget;
@@ -18,11 +20,13 @@ const handleMouseLeave = (event) => {
   event.currentTarget.style.transform = "";
 };
 
-// const [isOpened, setIsOpened] = useState(false);
-// const toggleModal = () => setIsOpened(!isOpened);
-
 function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
   const gradientColors = stack.map((item) => item.color).join(", ");
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <a
@@ -82,14 +86,44 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
               <img
                 src={imgUrl}
                 alt="my image"
-                className="h-32 w-32 rounded-lg object-contain hover:scale-[3]"
+                className="h-32 w-32 rounded-lg object-contain"
                 onClick={toggleModal}
               />
             )}
           </div>
+          {isOpen && (
+            <div
+              className="fixed z-10 inset-0 overflow-y-auto"
+              aria-labelledby="modal-title"
+              role="dialog"
+              aria-modal="true"
+              onClick={toggleModal}
+            >
+              <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                <div
+                  className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                  aria-hidden="true"
+                ></div>
+                <span
+                  className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                  aria-hidden="true"
+                >
+                  &#8203;
+                </span>
+                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                  <button
+                    className="absolute top-0 right-0 m-2 text-2xl leading-none hover:text-gray-300"
+                    onClick={toggleModal}
+                  >
+                    &times;
+                  </button>
+                  <img src={imgUrl} alt="my image" />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
-      
 
       <div className="mt-1">
         <p className="font-raleway font-bold max-w-[40ch] text-sm  text-gray-100 dark:text-gray-200">
