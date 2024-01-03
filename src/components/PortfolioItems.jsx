@@ -1,4 +1,3 @@
-
 const handleMouseMove = (event) => {
   let { offsetX, offsetY } = event.nativeEvent;
   const { offsetWidth, offsetHeight } = event.currentTarget;
@@ -10,24 +9,24 @@ const handleMouseMove = (event) => {
   const left = (offsetX / offsetWidth) * tilt;
   const top = -(offsetY / offsetHeight) * tilt;
 
-
   // event.currentTarget.style.transform = `perspective(500px) rotateX(${top}deg) rotateY(${left}deg) scale3d(1, 1, 1)`;
   event.currentTarget.style.transform = `perspective(500px) rotateX(${top}deg) rotateY(${left}deg) scale3d(1.05, 1.05, 1.05)`;
-// event.currentTarget.style.transform = `perspective(500px) rotateX(${top}deg) rotateY(${left}deg) scale3d(1.2, 1.2, 1.2)`;
-
+  // event.currentTarget.style.transform = `perspective(500px) rotateX(${top}deg) rotateY(${left}deg) scale3d(1.2, 1.2, 1.2)`;
 };
 
 const handleMouseLeave = (event) => {
   event.currentTarget.style.transform = "";
-
 };
+
+// const [isOpened, setIsOpened] = useState(false);
+// const toggleModal = () => setIsOpened(!isOpened);
 
 function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
   const gradientColors = stack.map((item) => item.color).join(", ");
 
   return (
     <a
-      className="relative block overflow-hidden rounded-lg border bg-cover bg-center duration-700 ease-out dark:border-gray-100 border-gray-900 p-4 sm:p-6 lg:p-9 hover:shadow-2xl"
+      className="relative block overflow-hidden rounded-lg border bg-cover bg-center duration-700 ease-out dark:border-gray-400 border-gray-900 p-4 sm:p-6 lg:p-9 hover:shadow-2xl"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{
@@ -35,8 +34,6 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
         // backgroundSize: "cover",
         // backgroundPosition: "center",
         // transition: "transform 0.5s ease-out",
-    
-
       }}
       target="_blank"
       rel="noreferrer"
@@ -54,7 +51,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
       <div className="sm:flex">
         <div>
           <h3 className="font-raleway text-24 font-semibold  text-gray-100 dark:text-gray-200 transform -translate-x-1 -translate-y-3 whitespace-nowrap">
-             {title}
+            {title}
           </h3>
           {/* <p className="font-raleway text-24 font-semibold  text-gray-100 dark:text-gray-200 transform -translate-x-1 -translate-y-3 whitespace-nowrap"> */}
           <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm text-black">
@@ -85,13 +82,14 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
               <img
                 src={imgUrl}
                 alt="my image"
-                // className="h-32 w-32 rounded-lg object-contain shadow-sm"
                 className="h-32 w-32 rounded-lg object-contain hover:scale-[3]"
+                onClick={toggleModal}
               />
             )}
           </div>
         </div>
       </div>
+      
 
       <div className="mt-1">
         <p className="font-raleway font-bold max-w-[40ch] text-sm  text-gray-100 dark:text-gray-200">
@@ -102,10 +100,8 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
 
       <dl className="mt-6 flex gap-4 sm:gap-6">
         <div className="flex flex-col-reverse">
-          <dt className="text-sm font-medium text-black dark:text-gray-400">
-          </dt>
-          <dd className="text-xs text-black dark:text-gray-400">
-          </dd>
+          <dt className="text-sm font-medium text-black dark:text-gray-400"></dt>
+          <dd className="text-xs text-black dark:text-gray-400"></dd>
         </div>
         <div>
           <a
@@ -127,7 +123,6 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
           </a>
         </div>
       </dl>
-
     </a>
   );
 }
