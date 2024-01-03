@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 
 import Contact from "./components/Contact";
@@ -10,9 +11,10 @@ import Time from "./components/Time";
 import Title from "./components/Title";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <>
-      <Navbar />
+      <div className={`App ${isDarkMode ? 'dark' : ''}`}>
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
       <div className="bg-white dark:bg-gray-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
         <div className="max-w-5xl w-11/12 mx-auto">
@@ -21,21 +23,21 @@ function App() {
               path="/Minimal-Portfolio/"
               element={
                 <>
-                  <Header />
-                  <Title />
-                  <Time />
-                  <Contact />
-                  <Footer />
+                  <Header isDarkMode={isDarkMode} />
+                  <Title isDarkMode={isDarkMode} />
+                  <Time isDarkMode={isDarkMode} />
+                  <Contact isDarkMode={isDarkMode} />
+                  <Footer isDarkMode={isDarkMode} />
                 </>
               }
             />
-            <Route path="/Minimal-Portfolio/projects" element={<Portfolio />} />
+            <Route path="/Minimal-Portfolio/projects" element={<Portfolio isDarkMode={isDarkMode} />} />
 
             {/* other routes */}
           </Routes>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
