@@ -5,6 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+
   return (
     <nav className={isDarkMode ? "bg-primary" : "bg-primary"}>
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -24,15 +25,22 @@ function Navbar() {
                 </svg>
               )}
             </button>
+
           </div>
           {/* Links for large screens */}
-          <div className="hidden sm:block sm:ml-6">
+          <div className="hidden sm:block sm:ml-auto sm:mr-auto">
             <div className="flex space-x-4">
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/">Home</Link>
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/about">About</Link>
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/projects">Projects</Link>
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/contact">Contact</Link>
             </div>
+          </div>
+          {/* Dark mode button */}
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+              {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
           </div>
         </div>
       </div>
