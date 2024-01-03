@@ -10,8 +10,7 @@ function DownloadButton() {
   const handleButtonClick = () => {
     if (blocked) return;
     setBlocked(true);
-    const downloadLink =
-      "https://drive.google.com/file/d/1v_22b24HPRQ74OnEMn-NY5c2rlsWSftA/view";
+    const downloadLink = "https://drive.google.com/file/d/1v_22b24HPRQ74OnEMn-NY5c2rlsWSftA/view";
 
     window.open(downloadLink, "_blank");
 
@@ -40,6 +39,7 @@ function DownloadButton() {
           check.classList.add("w-0");
           check.classList.remove("w-5");
           setTimeout(() => {
+          
             reset();
           }, 1000);
         }, 1000);

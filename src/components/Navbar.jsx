@@ -95,7 +95,7 @@ function Navbar() {
                     className="hover:text-gray-200 hover:underline px-4 py-2 "
                     href="/Minimal-Portfolio/"
                   >
-                    Home
+                    {/* Home */}
                   </a>
                 </li>
                 {/* <li>

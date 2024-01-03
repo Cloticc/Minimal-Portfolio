@@ -34,7 +34,7 @@ export default [
     },
     {
         year: '2022-2023',
-        title: 'Racial UI',
+        title: 'Custom Ability UI',
         duration: 'For emulator',
         details:
             'The interface ensures a seamless and intuitive experience by organizing these racial abilities and items into separate tabs. Each tab represents a specific category or type of ability or item, making it easier for players to navigate and select their preferred options. Additionally, to maintain balance and prevent overwhelming choices, the interface incorporates a maximum limit on the number of abilities or items that can be assigned within each tab. The interface ensures a seamless and intuitive experience by organizing these racial abilities and items into separate tabs. Each tab represents a specific category or type of ability or item, making it easier for players to navigate and select their preferred options. Additionally, to maintain balance and prevent overwhelming choices, the interface incorporates a maximum limit on the number of abilities or items that can be assigned within each tab. This limitation encourages players to carefully consider their choices and strategically allocate their available slots to ensure an optimized character build. By setting a maximum limit, the interface promotes thoughtful decision-making, resource management, and adaptability, as players must prioritize which abilities and items best suit their playstyle and the challenges they face in the game. In summary, the interface described in the text offers players a convenient and dynamic means of selecting and switching between available racial abilities and items. By organizing these options into separate tabs and incorporating maximum limits, the interface encourages players to strategically customize their characters capabilities, fostering adaptability and enhancing the overall gameplay experience.',
@@ -42,13 +42,15 @@ export default [
     },
 
     {
-        year: '2020',
-        title: 'Titan-League',
-        duration: 'Side project for emulator.',
+        year: '2022-2022',
+        title: 'Weather-App',
+        duration: 'Simplistic weather app ',
         details:
-            'Vue.js to develop the front-end of a website for a emulator as proof of my skills. The project involved designing and implementing a user-friendly interface using HTML, CSS, and Vue.js, as well as collaborating with a back-end developer to ensure a smooth interaction between the interface and the server. The result was an attractive and responsive website that improved the user experience.',
+            'Weather app to check the forcast of given location you input.',
 
     },
+
+
 
 
 
