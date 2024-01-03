@@ -94,6 +94,12 @@ function Navbar() {
                     Projects
                   </Link>
                 </li>
+                <li>
+                  <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/Minimal-Portfolio/contact">
+                    Contact
+                  </Link>
+                </li>
+                
               </ul>
 
               <div className=" xl:flex items-center space-x-5">
