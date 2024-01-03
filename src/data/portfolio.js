@@ -43,7 +43,7 @@ export default [
   },
   {
     title: "Custom Zone-specific Enhancements",
-    description: "System that check what zone you are in and automatically applies the appropriate buffs. With commands to change settings ingame. Get data from a SQL database.",
+    description: "System that check what zone you are in and automatically applies the appropriate buffs. With commands to change settings ingame CRUD. Get data from a SQL database.",
     imgBg: "",
     imgUrl: "",
     stack: [
@@ -56,7 +56,7 @@ export default [
     title: "Weather-App",
     description: "Weather app to check the forcast of given location you input.",
     imgBg: "",
-    imgUrl: "https://camo.githubusercontent.com/9b5e35b1a2668e10772ac11310f00e290b95fdd966a19a4ee41c5fbc23443329/68747470733a2f2f69696c692e696f2f4467683754752e706e67",
+    imgUrl: "https://iili.io/J5W1czb.png",
     stack: [
       { name: "HTML  ", color: "#e34c26" },
       { name: "CSS", color: "#563d7c" },
