@@ -29,6 +29,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
   };
 
   return (
+    
     <a
       className="relative block overflow-hidden rounded-lg border bg-cover bg-center duration-700 ease-out dark:border-gray-400 border-gray-900 p-4 sm:p-6 lg:p-9 hover:shadow-2xl"
       // onMouseMove={handleMouseMove}
@@ -39,6 +40,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
       target="_blank"
       rel="noreferrer"
     >
+
       {/* <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-white via-purple-700 to-purple-900"></span> */}
       <span
         className="absolute inset-x-0 bottom-0 h-2"
@@ -46,7 +48,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
           backgroundImage: `linear-gradient(to right, ${gradientColors})`,
           boxShadow: `0 0 5px ${gradientColors}`,
         }}
-      ></span>
+        ></span>
 
       {/* <div className="sm:flex sm:justify-between  sm:gap-4"> */}
       <div className="sm:flex">
