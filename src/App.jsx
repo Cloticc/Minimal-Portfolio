@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 
 import Contact from "./components/Contact";
@@ -12,8 +14,18 @@ import Title from "./components/Title";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
+  }, []);
+
   return (
-      <div className={`App ${isDarkMode ? 'dark' : ''}`}>
+    <div className={`App ${isDarkMode ? 'dark' : ''}`}>
+
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
       <div className="bg-white dark:bg-gray-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">

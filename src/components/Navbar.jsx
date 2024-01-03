@@ -1,9 +1,20 @@
+import React, { useEffect, useState } from "react";
+
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+
+// import { useState } from 'react';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // create function to check if user prefers dark mode
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setIsDarkMode(true);
+    }
+  }, []);
+
 
 
 

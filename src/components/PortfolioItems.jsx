@@ -29,7 +29,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
   };
 
   return (
-    
+
     <a
       className="relative block overflow-hidden rounded-lg border bg-cover bg-center duration-700 ease-out dark:border-gray-400 border-gray-900 p-4 sm:p-6 lg:p-9 hover:shadow-2xl"
       // onMouseMove={handleMouseMove}
@@ -48,7 +48,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
           backgroundImage: `linear-gradient(to right, ${gradientColors})`,
           boxShadow: `0 0 5px ${gradientColors}`,
         }}
-        ></span>
+      ></span>
 
       {/* <div className="sm:flex sm:justify-between  sm:gap-4"> */}
       <div className="sm:flex">
@@ -59,10 +59,9 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
           {/* <p className="font-raleway text-24 font-semibold  text-gray-100 dark:text-gray-200 transform -translate-x-1 -translate-y-3 whitespace-nowrap"> */}
           <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm text-black">
             {stack.map((item, index) => (
-              <a
+              <button
                 key={index}
                 className="inline-block px-2 py-1 font-mono rounded-md border-stone-900 dark:border-white  hover:bg-stone-900 dark:hover:bg-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-                href="#"
                 onClick={() =>
                   window.open(
                     `https://www.google.com/search?q=${item.name}`,
@@ -75,7 +74,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
                 }}
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </p>
         </div>
@@ -143,7 +142,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
         </div>
 
         <div className="absolute bottom-5 left-5 inline-flex items-center text-blue-600 dark:text-blue-600 hover:underline">
-          Link to project
+          {/* Link to project */}
           <svg
             className="w-5 h-5 ml-2"
             fill="currentColor"
