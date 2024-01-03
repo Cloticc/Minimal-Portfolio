@@ -50,7 +50,8 @@ function Navbar() {
           </div>
           {/* Dark mode button */}
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-      <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+              <button onClick={() => setIsDarkMode(!isDarkMode)}  > asdasdas </button>
+       <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
         {isDarkMode ? (
           <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {/* SVG path for light mode icon */}
@@ -82,7 +83,8 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export  default Navbar; 
+ 
 
 
 // // import React from "react";
