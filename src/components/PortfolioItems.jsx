@@ -118,6 +118,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
                   >
                     &times;
                   </button>
+                  {/* <img className="w-full h-full" src={imgUrl} alt="my image" /> */}
                   <img className="w-full h-auto" src={imgUrl} alt="my image" />
                 </div>
               </div>
