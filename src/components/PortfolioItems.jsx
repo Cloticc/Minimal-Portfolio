@@ -20,7 +20,8 @@ const handleMouseLeave = (event) => {
   event.currentTarget.style.transform = "";
 };
 
-function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
+function PortfolioItem({ title, description, imgBg, imgUrl,  stack = [], link }) {
+  
   const gradientColors = stack.map((item) => item.color).join(", ");
 
   const [isOpen, setIsOpen] = useState(false);
@@ -141,6 +142,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
           <dt className="text-sm font-medium text-black dark:text-gray-400"></dt>
           <dd className="text-xs text-black dark:text-gray-400"></dd>
         </div>
+        
         <div>
           <a
             className="absolute bottom-5 left-5 inline-flex items-center text-blue-600 dark:text-blue-600 hover:underline"
