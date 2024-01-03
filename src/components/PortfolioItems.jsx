@@ -86,46 +86,46 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
               <img
                 src={imgUrl}
                 alt="my image"
-                className="h-32 w-32 rounded-lg object-contain"
+                className="h-32 w-32 rounded-lg object-contain cursor-pointer transform hover:scale-105 transition-transform"
                 onClick={toggleModal}
               />
             )}
           </div>
 
           {isOpen && (
-  <div
-    className="fixed z-10 inset-0 overflow-y-auto"
-    aria-labelledby="modal-title"
-    role="dialog"
-    aria-modal="true"
-    onClick={toggleModal} // Close the modal when clicking on the overlay
-  >
-    <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-      <div
-        className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
-        aria-hidden="true"
-      ></div>
-      <span
-        className="hidden sm:inline-block sm:align-middle sm:h-screen"
-        aria-hidden="true"
-      >
-        &#8203;
-      </span>
-      <div
-        className="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-8 max-w-full w-full sm:max-w-md sm:w-3/4 lg:w-1/2"
-        onClick={(e) => e.stopPropagation()} // Prevent the click event from propagating to the overlay
-      >
-        <button
-          className="absolute top-0 right-0 m-2 text-2xl leading-none hover:text-gray-300"
-          onClick={toggleModal}
-        >
-          &times;
-        </button>
-        <img className="w-full h-auto" src={imgUrl} alt="my image" />
-      </div>
-    </div>
-  </div>
-)}
+            <div
+              className="fixed z-10 inset-0 overflow-y-auto"
+              aria-labelledby="modal-title"
+              role="dialog"
+              aria-modal="true"
+              onClick={toggleModal} // Close the modal when clicking on the overlay
+            >
+              <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                <div
+                  className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                  aria-hidden="true"
+                ></div>
+                <span
+                  className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                  aria-hidden="true"
+                >
+                  &#8203;
+                </span>
+                <div
+                  className="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-8 max-w-full w-full sm:max-w-md sm:w-3/4 lg:w-1/2"
+                  onClick={(e) => e.stopPropagation()} // Prevent the click event from propagating to the overlay
+                >
+                  <button
+                    className="absolute top-0 right-0 m-2 text-2xl leading-none hover:text-gray-300"
+                    onClick={toggleModal}
+                  >
+                    &times;
+                  </button>
+                  <img className="w-full h-auto" src={imgUrl} alt="my image" />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -148,7 +148,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack, link }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Link
+            {/* Link */}
             <svg
               className="w-5 h-5 ml-2"
               fill="currentColor"
