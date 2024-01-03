@@ -24,16 +24,13 @@ function App() {
                   <Header />
                   <Title />
                   <Time />
-                  <PortfolioItems />
                   <Contact />
                   <Footer />
                 </>
               }
             />
-            <Route
-              path="/Minimal-Portfolio/projects"
-              element={<PortfolioItems />}
-            />
+            <Route path="/Minimal-Portfolio/projects" element={<Portfolio />} />
+
             {/* other routes */}
           </Routes>
         </div>
@@ -43,38 +40,3 @@ function App() {
 }
 
 export default App;
-
-// function App() {
-//   const isProduction = process.env.NODE_ENV === "production";
-//   const basename = isProduction ? "/Minimal-Portfolio" : "";
-
-//   return (
-//     <>
-//       <Navbar />
-
-//       <div className="bg-white dark:bg-gray-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-//         <div className="max-w-5xl w-11/12 mx-auto">
-//           {/* <Router basename={process.env.PUBLIC_URL}> */}
-//           {/* <Router basename={basename}> */}
-//           <Routes>
-//             <Route
-//               path="/"
-//               element={
-//                 <>
-//                   <Header />
-//                   <Title />
-//                   <Portfolio />
-//                   <Time />
-//                   <Contact />
-//                   <Footer />
-//                 </>
-//               }
-//             />
-//             <Route path="/cv" element={<Cv />} />
-//           </Routes>
-//           {/* </Router> */}
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
