@@ -1,24 +1,13 @@
-// import React, { useEffect, useState } from "react";
-// import { Route, Routes } from "react-router-dom";
-
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
+import PortfolioItems from "./components/PortfolioItems";
 import Time from "./components/Time";
 import Title from "./components/Title";
-
-// import CvIndex from "./pages/CvIndex.jsx";
-
-
-// import Home from "./pages/Home";
-
-
-
-
 
 function App() {
   return (
@@ -34,18 +23,18 @@ function App() {
                 <>
                   <Header />
                   <Title />
-                  <Portfolio />
                   <Time />
+                  <PortfolioItems />
                   <Contact />
                   <Footer />
                 </>
               }
             />
-            {/* <Route path="/cv" element={<Cv />} /> */}
-
-            {/* <Route path="/Minimal-Portfolio/cv" element={<CvIndex />} /> */}
-
-            {/* <Route path="/Home" element={<Home />} /> */}
+            <Route
+              path="/Minimal-Portfolio/projects"
+              element={<PortfolioItems />}
+            />
+            {/* other routes */}
           </Routes>
         </div>
       </div>
