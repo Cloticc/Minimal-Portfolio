@@ -4,22 +4,10 @@ import { Link } from 'react-router-dom';
 
 // import { useState } from 'react';
 
-function Navbar() {
+function Navbar( { isDarkMode, setIsDarkMode } ) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // create function to check if user prefers dark mode
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setIsDarkMode(true);
-    }
-  }, []);
-
-
-
-
   return (
-    <nav className={isDarkMode ? "bg-primary" : "bg-slate-500"}>
+    <nav className={isDarkMode ? "bg-primary" : "bg-primary"}>
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           {/* Mobile menu button*/}
