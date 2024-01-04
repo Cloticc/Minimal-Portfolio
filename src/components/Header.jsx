@@ -2,7 +2,7 @@ import React from "react";
 
 function Information() {
   return (
-      
+
     <div className="flex items-center justify-start flex-col text-center pt-20 pb-10 relative">
       <img
         // src="https://rainnerlins.com/public/images/editor.png"
@@ -16,7 +16,7 @@ function Information() {
       <p className="animate-fade-down text-1xl md:text-2xl mb-3 text-gray-200 dark:text-gray-200 font-Raleway z-20 relative top-3 md:top-1">
         A developer that enjoy coding and gaming.
       </p>
-      <p className="animate-fade-down max-w-xl mb-4 text-sm md:text-xl text-gray-200 dark:text-gray-200 font-Raleway tracking-tight z-20 relative top-3 md:top-1">
+      <p className="animate-fade-down max-w-xl mb-4 text-sm md:text-xl text-gray-200 dark:text-gray-200 font-Raleway tracking-tight z-20 relative sm:translate-y-[10px]">
         A self-taught developer with a passion for technology and gaming, I've
         spent the past years honing my coding skills across a wide range of
         technologies and programming languages.
