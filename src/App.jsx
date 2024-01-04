@@ -26,26 +26,29 @@ function App() {
   return (
     <div className={`App ${isDarkMode ? 'dark' : ''}`}>
 
-<Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <div className="bg-white dark:bg-gray-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto">
-          <Routes>
-            <Route
-              path="/Minimal-Portfolio/"
-              element={
-                <>
-                  <Header isDarkMode={isDarkMode} />
-                  <Title isDarkMode={isDarkMode} />
-                  <Time isDarkMode={isDarkMode} />
-                  <Contact isDarkMode={isDarkMode} />
-                  <Footer isDarkMode={isDarkMode} />
-                </>
-              }
-            />
-            <Route path="/Minimal-Portfolio/projects" element={<Portfolio isDarkMode={isDarkMode} />} />
+      <div className={isDarkMode ? "dark-mode" : "light-mode"}>
+        <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
-            {/* other routes */}
-          </Routes>
+        <div className="bg-white dark:bg-gray-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
+          <div className="max-w-5xl w-11/12 mx-auto">
+            <Routes>
+              <Route
+                path="/Minimal-Portfolio/"
+                element={
+                  <>
+                    <Header isDarkMode={isDarkMode} />
+                    <Title isDarkMode={isDarkMode} />
+                    <Time isDarkMode={isDarkMode} />
+                    <Contact isDarkMode={isDarkMode} />
+                    <Footer isDarkMode={isDarkMode} />
+                  </>
+                }
+              />
+              <Route path="/Minimal-Portfolio/projects" element={<Portfolio isDarkMode={isDarkMode} />} />
+
+              {/* other routes */}
+            </Routes>
+          </div>
         </div>
       </div>
     </div>
