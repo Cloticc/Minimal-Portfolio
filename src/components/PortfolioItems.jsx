@@ -31,7 +31,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
   return (
 
     <a
-      className="relative block overflow-hidden rounded-lg border bg-cover bg-center duration-700 ease-out dark:border-gray-400 border-gray-900 p-4 sm:p-5  hover:shadow-2xl"
+      className="relative block overflow-hidden rounded-lg border bg-cover bg-center duration-700 ease-out dark:border-gray-400 border-gray-900 p-4 sm:p-5  hover:shadow-2xl mt-5"
       // onMouseMove={handleMouseMove}
       // onMouseLeave={handleMouseLeave}
       style={{
