@@ -31,7 +31,7 @@ function Navbar( { isDarkMode, setIsDarkMode } ) {
           <div className="hidden sm:block sm:ml-auto sm:mr-auto">
             <div className="flex space-x-4">
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/">Home</Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/about">About</Link>
+              {/* <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/about">About</Link> */}
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/projects">Projects</Link>
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/contact">Contact</Link>
             </div>

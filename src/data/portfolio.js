@@ -4,6 +4,14 @@ GitHub repository or website. This code is likely used to showcase a list of pro
 or portfolio. */
 export default [
   {
+    title: "Music Player",
+    description: "A music player with a simple yet powerful design, featuring a range of functionalities such as play, pause, skip, and volume control. And a favorit list.",
+    imgBg: "",
+    imgUrl: "./assets/2024-02-02-08-45-27.png",
+    stack: [{ name: "JS", color: "#f1e05a" }, { name: "HTML", color: "#e34c26" }, { name: "CSS", color: "#563d7c" },],
+    link: "https://cloticc.github.io/lexicon-tasks/lexicon-task-music-player-two/",
+  },
+  {
     title: "Custom Shop UI",
     description: " Creating a custom user interface using lua, featuring a simple yet powerful design with the ability to customize item and spell costs for an enhanced player vendor experiance.  ",
     imgBg: "",
@@ -17,7 +25,7 @@ export default [
     description: "A dynamic portfolio website crafted using React and Vite, showcasing a range of skills and projects.",
     imgBg: "",
     imgUrl: "./assets/portfolio.png",
-    stack: [{ name: "React", color: "#467ea2" }, { name: "Vite", color: "#983ced" }, { name: "HTML", color: "#e34c26" }, { name: "Tailwind", color: "#74bef5" },],
+    stack: [{ name: "React", color: "#467ea2" }, { name: "Vite", color: "#983ced" }, { name: "Tailwind", color: "#74bef5" },],
 
     link: "https://cloticc.github.io/Minimal-Portfolio/",
   },
