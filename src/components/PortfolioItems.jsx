@@ -57,7 +57,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
             {title}
           </h3>
           {/* <p className="font-raleway text-24 font-semibold  text-gray-100 dark:text-gray-200 transform -translate-x-1 -translate-y-3 whitespace-nowrap"> */}
-          <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm text-black">
+          <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm text-black mr-5 mt-3">
             {stack.map((item, index) => (
               <button
                 key={index}
