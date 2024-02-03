@@ -93,7 +93,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
 
           {isOpen && (
             <div
-              className="fixed z-10 inset-0 overflow-y-auto"
+              className="fixed z-10 inset-0 overflow-y-auto "
               aria-labelledby="modal-title"
               role="dialog"
               aria-modal="true"
@@ -111,7 +111,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
                   &#8203;
                 </span>
                 <div
-                  className="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-8 max-w-full w-full sm:max-w-md sm:w-3/4 lg:w-1/2"
+                  className="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-8 max-w-full w-full sm:max-w-md sm:w-3/4 lg:w-1/2 scale-200"
                   onClick={(e) => e.stopPropagation()} // Prevent the click event from propagating to the overlay
                 >
                   <button
@@ -121,7 +121,10 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
                     &times;
                   </button>
                   {/* <img className="w-full h-full" src={imgUrl} alt="my image" /> */}
-                  <img className="w-full h-auto" src={imgUrl} alt="my image" />
+                  <img className="w-full h-full" src={imgUrl} alt="my image" />
+
+
+
                 </div>
               </div>
             </div>
