@@ -10,7 +10,9 @@ function TimelineItem({ year, title, duration, details }) {
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
     if (!isExpanded) {
-      detailsRef.current.scrollIntoView({ behavior: "smooth" });
+      if (detailsRef.current) {
+        detailsRef.current.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 

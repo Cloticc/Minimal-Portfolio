@@ -36,18 +36,25 @@ function App() {
           <div className="max-w-5xl w-11/12 mx-auto">
             <Routes>
               <Route
-              
+
                 path="/Minimal-Portfolio/"
                 element={
                   <>
                     <Header isDarkMode={isDarkMode} />
                     <Title isDarkMode={isDarkMode} />
-                    <Time isDarkMode={isDarkMode} />
                   </>
                 }
               />
-              <Route path="/Minimal-Portfolio/projects" element={<Portfolio isDarkMode={isDarkMode} />} />
-              <Route path="/Minimal-Portfolio/contact" element={<Contact />} />
+              <Route path="/Minimal-Portfolio/projects" element={<>
+                <Portfolio isDarkMode={isDarkMode} />
+                <Time isDarkMode={isDarkMode} />
+              </>} />
+
+
+              <Route path="/Minimal-Portfolio/contact" element={<>
+                <Contact isDarkMode={isDarkMode} />
+
+              </>} />
             </Routes>
             <Footer isDarkMode={isDarkMode} />
           </div>

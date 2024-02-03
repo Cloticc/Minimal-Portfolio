@@ -54,7 +54,7 @@ function PortfolioItem({ title, description, imgBg, imgUrl, stack = [], link, })
       {/* <div className="sm:flex sm:justify-between  sm:gap-4"> */}
       <div className="sm:flex">
         <div>
-          <h3 className="font-raleway text-24 font-semibold  text-black-100 dark:text-gray-200 transform -translate-x-1 -translate-y-3 whitespace-nowrap">
+          <h3 className="font-raleway text-24 font-semibold text-black-100 dark:text-gray-200 transform -translate-x-1 -translate-y-3 whitespace-nowrap">
             {title}
           </h3>
           {/* <p className="font-raleway text-24 font-semibold  text-gray-100 dark:text-gray-200 transform -translate-x-1 -translate-y-3 whitespace-nowrap"> */}
