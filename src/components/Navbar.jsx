@@ -31,8 +31,8 @@ function Navbar( { isDarkMode, setIsDarkMode } ) {
           <div className="hidden sm:block sm:ml-auto sm:mr-auto">
             <div className="flex space-x-4">
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/">Home</Link>
-              {/* <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/about">About</Link> */}
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/projects">Projects</Link>
+              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/Shop">Shop</Link>
               <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/contact">Contact</Link>
             </div>
           </div>
@@ -61,8 +61,8 @@ function Navbar( { isDarkMode, setIsDarkMode } ) {
         <div className="sm:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/">Home</Link>
-            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/about">About</Link>
             <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/projects">Projects</Link>
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/Shop">Shop</Link>
             <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/contact">Contact</Link>
           </div>
         </div>

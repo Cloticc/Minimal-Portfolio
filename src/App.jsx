@@ -8,12 +8,9 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
+import Shop from "./components/Shop";
 import Time from "./components/Time";
 import Title from "./components/Title";
-
-// import PortfolioItems from "./components/PortfolioItems";
-
-
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -50,6 +47,9 @@ function App() {
                 <Time isDarkMode={isDarkMode} />
               </>} />
 
+              <Route path="/Minimal-Portfolio/shop" element={<>
+                <Shop isDarkMode={isDarkMode} />
+              </>} />
 
               <Route path="/Minimal-Portfolio/contact" element={<>
                 <Contact isDarkMode={isDarkMode} />
