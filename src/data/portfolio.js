@@ -5,7 +5,7 @@ or portfolio. */
 export default [
   {
     title: "Music Player",
-    description: "A music player with a simple yet powerful design, featuring a range of functionalities such as play, pause, skip, and volume control. And a favorit list.",
+    description: "A simple music player with beat detection and equalizer in the browser right now it has playlist that cant be change without adding new songs or updating api. As this was a exerice for a class i took.",
     imgBg: "",
     imgUrl: "./assets/2024-02-02-08-45-27.png",
     stack: [{ name: "JS", color: "#f1e05a" }, { name: "HTML", color: "#e34c26" }, { name: "CSS", color: "#563d7c" },],
@@ -24,7 +24,7 @@ export default [
     title: "Portfolio",
     description: "A dynamic portfolio website crafted using React and Vite, showcasing a range of skills and projects.",
     imgBg: "",
-    imgUrl: "./assets/portfolio.png",
+    imgUrl: "./assets/2024-02-03-15-54-05.png",
     stack: [{ name: "React", color: "#467ea2" }, { name: "Vite", color: "#983ced" }, { name: "Tailwind", color: "#74bef5" },],
 
     link: "https://cloticc.github.io/Minimal-Portfolio/",
