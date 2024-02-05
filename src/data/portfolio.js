@@ -9,7 +9,7 @@ export default [
     imgBg: "",
     imgUrl: "./assets/2024-02-02-08-45-27.png",
     stack: [{ name: "JS", color: "#f1e05a" }, { name: "HTML", color: "#e34c26" }, { name: "CSS", color: "#563d7c" },],
-    link: "https://cloticc.github.io/lexicon-tasks/lexicon-task-music-player-two/",
+    link: "https://github.com/Cloticc/lexicon-tasks/tree/main/lexicon-task-music-player-two",
   },
   {
     title: "Custom Shop UI",
