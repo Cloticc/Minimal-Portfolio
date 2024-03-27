@@ -1,8 +1,14 @@
 import React, { createContext, useState } from 'react';
 
-export const MyContext = createContext();
+export const MyContext = createContext({} as any);
 
-export const MyContextProvider = ({ children }) => {
+
+
+interface ChildrenProps {
+  children: React.ReactNode;
+}
+
+export const MyContextProvider = ({ children }: ChildrenProps) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
 

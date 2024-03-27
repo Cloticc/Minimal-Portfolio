@@ -10,8 +10,15 @@ export function CV() {
   const { isDarkMode, setIsDarkMode } = useContext(MyContext);
 
 
+  useEffect(() => {
+    setIsDarkMode(false);
 
+    return () => {
+      setIsDarkMode(true);
+    };
+  }, [setIsDarkMode]);
 
+  
   const birthYear = 1993;
   const [ageMessage, setAgeMessage] = useState("");
 
