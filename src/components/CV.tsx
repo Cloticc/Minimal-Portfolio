@@ -1,6 +1,6 @@
 import "../styles/CV.css";
 
-import React, { useContext, useEffect, useState } from "react";
+import{ useContext, useEffect, useState } from "react";
 
 import { MyContext } from "../context/MyContext";
 
