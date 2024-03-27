@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 
+import {CV} from './components/CV';
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -51,10 +52,14 @@ function App() {
                 <Shop isDarkMode={isDarkMode} />
               </>} />
 
-              <Route path="/Minimal-Portfolio/contact" element={<>
-                <Contact isDarkMode={isDarkMode} />
-
+              <Route path="/Minimal-Portfolio/cv" element={<>
+                <CV isDarkMode={isDarkMode} />  
               </>} />
+
+              {/* <Route path="/Minimal-Portfolio/contact" element={<>
+                <Contact isDarkMode={isDarkMode} /> */}
+
+              {/* </>} /> */}
             </Routes>
             <Footer isDarkMode={isDarkMode} />
           </div>

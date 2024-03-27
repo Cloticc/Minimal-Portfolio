@@ -14,12 +14,10 @@ function Information() {
         Andreas Isidorsson
       </h1>
       <p className="animate-fade-down text-1xl md:text-2xl mb-3 text-gray-200 dark:text-gray-200 font-Raleway z-20 relative translate-y-3 sm:translate-y-9">
-        A developer that enjoy coding and gaming.
+        Under construction 🚧
       </p>
       <p className="animate-fade-down text-sm text-gray-200 dark:text-gray-200 font-Raleway tracking-tight z-20 relative translate-y-1 sm:translate-y-10">
-        A self-taught developer with a passion for technology and gaming, I've
-        spent the past years honing my coding skills across a wide range of
-        technologies and programming languages.
+        ...
       </p>
     </div>
   );
