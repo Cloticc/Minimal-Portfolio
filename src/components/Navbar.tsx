@@ -1,11 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { Link } from 'react-router-dom';
+import { MyContext } from "../context/MyContext";
 
 // import { useState } from 'react';
 
-function Navbar( { isDarkMode, setIsDarkMode } ) {
+function Navbar(){
   const [isOpen, setIsOpen] = useState(false);
+
+  const { isDarkMode, setIsDarkMode } = useContext(MyContext); 
+   
   return (
     <nav className={isDarkMode ? "bg-primary" : "bg-primary"}>
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -30,11 +34,11 @@ function Navbar( { isDarkMode, setIsDarkMode } ) {
           {/* Links for large screens */}
           <div className="hidden sm:block sm:ml-auto sm:mr-auto">
             <div className="flex space-x-4">
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/">Home</Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/projects">Projects</Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/Shop">Shop</Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/contact">Contact</Link>
-              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Minimal-Portfolio/CV">CV</Link>
+              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/">Home</Link>
+              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/projects">Projects</Link>
+              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/Shop">Shop</Link>
+              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/contact">Contact</Link>
+              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/CV">CV</Link>
             </div>
           </div>
           {/* Dark mode button */}
@@ -61,11 +65,11 @@ function Navbar( { isDarkMode, setIsDarkMode } ) {
       {isOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/">Home</Link>
-            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/projects">Projects</Link>
-            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/Shop">Shop</Link>
-            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/contact">Contact</Link>
-            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Minimal-Portfolio/CV">CV</Link>
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/">Home</Link>
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/projects">Projects</Link>
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/Shop">Shop</Link>
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/contact">Contact</Link>
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/CV">CV</Link>
           </div>
         </div>
       )}
@@ -159,22 +163,22 @@ export  default Navbar;
 
 //               <ul className="flex px-4 mx-auto font-semibold text-lg font-heading ">
 //                 <li>
-//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/Minimal-Portfolio/">
+//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/">
 //                     Home
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/Minimal-Portfolio/about">
+//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/about">
 //                     About
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/Minimal-Portfolio/projects">
+//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/projects">
 //                     Projects
 //                   </Link>
 //                 </li>
 //                 <li>
-//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/Minimal-Portfolio/contact">
+//                   <Link className="hover:text-gray-200 hover:underline px-4 py-2" to="/contact">
 //                     Contact
 //                   </Link>
 //                 </li>

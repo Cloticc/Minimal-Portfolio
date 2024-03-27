@@ -37,7 +37,7 @@ export function App() {
             <Routes>
               <Route
 
-                path="/Minimal-Portfolio/"
+                path="/"
                 element={
                   <>
                     <Header isDarkMode={isDarkMode} />
@@ -45,16 +45,16 @@ export function App() {
                   </>
                 }
               />
-              <Route path="/Minimal-Portfolio/projects" element={<>
+              <Route path="/projects" element={<>
                 <Portfolio isDarkMode={isDarkMode} />
                 <Time isDarkMode={isDarkMode} />
               </>} />
 
-              <Route path="/Minimal-Portfolio/shop" element={<>
+              <Route path="/shop" element={<>
                 <Shop isDarkMode={isDarkMode} />
               </>} />
 
-              <Route path="/Minimal-Portfolio/cv" element={<>
+              <Route path="/cv" element={<>
                 <CV isDarkMode={isDarkMode} />
               </>} />
 
