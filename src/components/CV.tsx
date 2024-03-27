@@ -1,15 +1,24 @@
 import "../styles/CV.css";
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+
+import { MyContext } from "../context/MyContext";
 
 export function CV() {
+
+
+  const { isDarkMode, setIsDarkMode } = useContext(MyContext);
+
+
+
+
   const birthYear = 1993;
   const [ageMessage, setAgeMessage] = useState("");
 
   useEffect(() => {
     const age = new Date().getFullYear() - birthYear;
     const messageTemplate = `En {age}-åring med en brinnande passion för spel och teknik. Jag älskar att utforska gränserna för vad som är möjligt med spel och teknik`;
-    const message = messageTemplate.replace("{age}", age);
+    const message = messageTemplate.replace("{age}", age.toString());
     setAgeMessage(message);
   }, [birthYear]);
 
@@ -66,22 +75,6 @@ export function CV() {
   // });
 
   // if mouseover fa icon, show tooltip website link small image
-  const faIcons = document.querySelectorAll(".fa");
-
-  faIcons.forEach((icon) => {
-    icon.addEventListener("mouseover", (e) => {
-      const icon = e.target;
-      const link = icon.getAttribute("data-link");
-      const tooltip = document.getElementById("tooltip");
-      tooltip.style.display = "block";
-      tooltip.innerHTML = `<a href="${link}" target="_blank">${link}</a>`;
-    });
-    icon.addEventListener("mouseout", (e) => {
-      const tooltip = document.getElementById("tooltip");
-      tooltip.style.display = "none";
-    });
-  });
-
   useEffect(() => {
     const faIcons = document.querySelectorAll(".fa");
     const scrollbox = document.getElementById("scrollbox");
@@ -89,33 +82,36 @@ export function CV() {
 
     faIcons.forEach((icon) => {
       icon.addEventListener("mouseover", (e) => {
-        const icon = e.target;
-        const link = icon.getAttribute("data-link");
+        const target = e.target as HTMLElement; // Type assertion
+        const link = target.getAttribute("data-link");
         const tooltip = document.getElementById("tooltip");
-        tooltip.style.display = "block";
-        tooltip.innerHTML = `<a href="${link}" target="_blank">${link}</a>`;
+        if (tooltip && link) { // Null check
+          tooltip.style.display = "block";
+          tooltip.innerHTML = `<a href="${link}" target="_blank">${link}</a>`;
+        }
       });
-      icon.addEventListener("mouseout", (e) => {
+      icon.addEventListener("mouseout", () => {
         const tooltip = document.getElementById("tooltip");
-        tooltip.style.display = "none";
+        if (tooltip) { // Null check
+          tooltip.style.display = "none";
+        }
       });
     });
 
-    scrollbox.addEventListener("scroll", (e) => {
-      const scrollbox = e.target;
-      const scrollbox_text = document.getElementById("scrollbox_text");
-      scrollbox_text.style.transform = `translateX(-${scrollbox.scrollLeft}px)`;
-    });
-
-    scrollbox.addEventListener("mouseleave", () => {
-      scrollbox.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
+    if (scrollbox && scrollbox_text) { // Null check
+      scrollbox.addEventListener("scroll", () => {
+        scrollbox_text.style.transform = `translateX(-${scrollbox.scrollLeft}px)`;
       });
-    });
+
+      scrollbox.addEventListener("mouseleave", () => {
+        scrollbox.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
+    }
   }, []);
-
   return (
     <>
       <div className="mode_element">
@@ -157,11 +153,12 @@ export function CV() {
                   <div className="resume_subtitle">Email</div>
                   <div className="resume_subinfo">
                     <a href="mailto:Isidorssona@gmail.com" target="_blank">
-                      <i className="fab fa-light fa-at"></i>
+                      {/* <i className="fas fa-at"></i> */}
+                      <i className="material-icons">mail</i>
                     </a>
                   </div>
                 </div>
-                <div className="" resume_info>
+                <div className="resume_info" >
                   <div className="resume_subtitle">Hemsida</div>
                   <div className="resume_subinfo">
                     <div className="resume_icons">
@@ -170,6 +167,9 @@ export function CV() {
                         target="_blank"
                       >
                         <i className="fa fa-globe"></i>
+                      </a>
+                      <a href="https://github.com/Cloticc/" target="_blank">
+                        <i className="fab fa-github" title="Github"></i>
                       </a>
                     </div>
                   </div>
@@ -180,9 +180,6 @@ export function CV() {
                     <div className="resume_icons">
                       <a href="" target="_blank"></a>
 
-                      <a href="https://github.com/Cloticc/" target="_blank">
-                        <i className="fab fa-github" title="Github"></i>
-                      </a>
                       <a
                         href="https://www.linkedin.com/in/andreas-isidorsson-457027148/"
                         target="_blank"
@@ -551,8 +548,7 @@ export function CV() {
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     role="img"
-                    wid
-                    th="1em"
+                    width="1em"
                     height="1em"
                     preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 24 24"

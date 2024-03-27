@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-/* get relway font */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
 
 * {
   margin: 0;
@@ -29,13 +30,6 @@ a {
   display: none;
 }
 
-/* scrollbox for "work" */
-
-/* width: 11150px;
-    left: 0px;
-    display: block;
-    transition: all 800ms ease 0s;
-    transform: translate3d(-2899px, 0px, 0px); */
 
 #scrollbox {
   height: 450px;
@@ -50,26 +44,9 @@ a {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* #scrollbox:hover::-webkit-scrollbar {
-	opacity: 1;
-} */
 
-/* #scrollbox_text {
-	position: relative;
-	animation: scrollDown 25s linear infinite alternate;
-	animation-fill-mode: none;
-} */
 
-/* @keyframes scrollDown {
-	0% {
-		transform: translateY(10%);
-	}
-
-	100% {
-		transform: translateY(-75%);
-	}
-} */
-
+/* Add other selectors and properties as needed */
 .resume_wrapper {
   display: flex;
   width: 900px;
@@ -425,29 +402,28 @@ a {
 }
 
 .resume_license_pad {
-  /* display: flex; */
-  /* flex-direction: column; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #0175b2;
+	flex-direction: column;
+}
 
-  /* text-align: center; */
-  /* padding-right: 0px; */
-  /* align-items: center; */
-  /* justify-content: center; */
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  padding-right: 140px;
-  color: #0175b2;
+.resume_license_pad .int_icon, .resume_license_pad .int_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .int_icon {
-  font-size: 25px;
+	font-size: 25px;
 }
 
 .int_text {
-  font-size: 75%;
+	font-size: 75%;
 }
+
 
 .resume_other_title {
   color: #26252d;

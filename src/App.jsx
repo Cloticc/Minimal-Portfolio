@@ -1,20 +1,22 @@
 // import React, { useState } from 'react';
 
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 
-import {CV} from './components/CV';
+import { CV } from './components/CV';
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { MyContext } from "./context/MyContext";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Shop from "./components/Shop";
 import Time from "./components/Time";
 import Title from "./components/Title";
 
-function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+export function App() {
+  const { isDarkMode, setIsDarkMode } = useContext(MyContext);
+
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -22,7 +24,7 @@ function App() {
     } else {
       setIsDarkMode(false);
     }
-  }, []);
+  }, [setIsDarkMode]);
 
   return (
     <div className={`App ${isDarkMode ? 'dark' : ''}`}>
@@ -53,7 +55,7 @@ function App() {
               </>} />
 
               <Route path="/Minimal-Portfolio/cv" element={<>
-                <CV isDarkMode={isDarkMode} />  
+                <CV isDarkMode={isDarkMode} />
               </>} />
 
               {/* <Route path="/Minimal-Portfolio/contact" element={<>
@@ -69,4 +71,3 @@ function App() {
   );
 }
 
-export default App;
