@@ -1,8 +1,12 @@
-/* The code is exporting an array of objects. Each object represents a project and contains properties
-such as title, description, image URLs, stack (technologies used), and a link to the project's
-GitHub repository or website. This code is likely used to showcase a list of projects on a website
-or portfolio. */
 export default [
+  {
+     title: "Sokoban",
+    description: "A game where you push boxes to their designated locations. This was a group project where we had to create a game in 4 weeks.",
+    imgBg: "",
+    imgUrl: "./assets/2024-02-02-08-45-27.png",
+    stack: [{ name: "JS\TS", color: "#f1e05a" }, { name: "React", color: "#61dafb" }, { name: "CSS", color: "#563d7c" },],
+    link: "https://github.com/Cloticc/lexicon-tasks/tree/main/lexicon-task-music-player-two",
+  },
   {
     title: "Music Player",
     description: "A simple music player with beat detection and equalizer in the browser right now it has playlist that cant be change without adding new songs or updating api. As this was a exerice for a class i took.",
