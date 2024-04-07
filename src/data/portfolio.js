@@ -1,11 +1,19 @@
 export default [
   {
-     title: "Sokoban",
-    description: "A game where you push boxes to their designated locations. This was a group project where we had to create a game in 4 weeks.",
+    title: "Sokoban",
+    description: "A game where you push boxes to their designated locations. This was a group project where we had to create a game in 4 weeks. We went through scrum and agile development. We used React and Typescript for the frontend.",
     imgBg: "",
-    imgUrl: "./assets/2024-02-02-08-45-27.png",
-    stack: [{ name: "JS\TS", color: "#f1e05a" }, { name: "React", color: "#61dafb" }, { name: "CSS", color: "#563d7c" },],
-    link: "https://github.com/Cloticc/lexicon-tasks/tree/main/lexicon-task-music-player-two",
+    imgUrl: "https://raw.githubusercontent.com/Cloticc/lexicon-react-game/main/assets/MainScreen.jpg",
+    stack: [{ name: "JS/TS", color: "#0076C6" }, { name: "React", color: "#61dafb" }, { name: "CSS", color: "#563d7c" },],
+    link: "https://github.com/Cloticc/lexicon-react-game",
+  },
+  {
+    title: "Radio Sweden",
+    description: "Site that you can lissen to swedish radio channels. This was to test the knowledge of api and how to use them. We used React and Typescript for the frontend.",
+    imgBg: "",
+    imgUrl: "./assets/2024-04-07-11-49-50.png",
+    stack: [{ name: "JS/TS", color: "#0076C6" }, { name: "React", color: "#61dafb" }, { name: "Tailwind", color: "#74bef5" },],
+    link: "https://github.com/Cloticc/lexicon-react-radio-app",
   },
   {
     title: "Music Player",
@@ -16,8 +24,17 @@ export default [
     link: "https://github.com/Cloticc/lexicon-tasks/tree/main/lexicon-task-music-player-two",
   },
   {
+    title: "Custom Upgrade System",
+    description: "A custom upgrade system that allows players to upgrade their gear using a combination of gold and materials. The system is designed to be easily configurable and can be applied to any item. Via a sql database.",
+    imgBg: "",
+    imgUrl: "./assets/2024-04-07-12-06-13.png",
+    stack: [{ name: "Eluna/Lua", color: "#3767a9" }],
+    link: "https://github.com/Cloticc/Eluna-scripts/tree/master/Systems/item-upgrader",
+  },
+
+  {
     title: "Custom Shop UI",
-    description: " Creating a custom user interface using lua, featuring a simple yet powerful design with the ability to customize item and spell costs for an enhanced player vendor experiance.  ",
+    description: "Creating a custom user interface using lua, featuring a simple yet powerful design with the ability to customize item and spell costs for an enhanced player vendor experiance.  ",
     imgBg: "",
     imgUrl: "./assets/racial-switch-ui.png",
     stack: [{ name: "Eluna/Lua", color: "#3767a9" }],
@@ -66,7 +83,7 @@ export default [
   },
   {
     title: "Weather-App",
-    description: "Weather app to check the forcast of given location you input.",
+    description: "Simplistic weather app to check the forecast of given location you input.",
     imgBg: "",
     imgUrl: "https://iili.io/J5W1czb.png",
     stack: [
