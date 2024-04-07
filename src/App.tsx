@@ -17,20 +17,11 @@ import Title from "./components/Title";
 export function App() {
   const { isDarkMode, setIsDarkMode } = useContext(MyContext);
 
-
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setIsDarkMode(true);
-    } else {
-      setIsDarkMode(false);
-    }
-  }, [setIsDarkMode]);
-
   return (
     <div className={`App ${isDarkMode ? 'dark' : ''}`}>
 
       <div className={isDarkMode ? "dark-mode" : "light-mode"}>
-        <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <Navbar />
 
         <div className="bg-white dark:bg-gray-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
           <div className="max-w-5xl w-11/12 mx-auto">
@@ -40,30 +31,30 @@ export function App() {
                 path="/"
                 element={
                   <>
-                    <Header isDarkMode={isDarkMode} />
-                    <Title isDarkMode={isDarkMode} />
+                    <Header  />
+                    {/* <Title  /> */}
                   </>
                 }
               />
               <Route path="/projects" element={<>
-                <Portfolio isDarkMode={isDarkMode} />
-                <Time isDarkMode={isDarkMode} />
+                <Portfolio  />
+                <Time  />
               </>} />
 
               <Route path="/shop" element={<>
-                <Shop isDarkMode={isDarkMode} />
+                <Shop  />
               </>} />
 
               <Route path="/cv" element={<>
-                <CV isDarkMode={isDarkMode} />
+                <CV  />
               </>} />
 
               {/* <Route path="/Minimal-Portfolio/contact" element={<>
-                <Contact isDarkMode={isDarkMode} /> */}
+                <Contact  /> */}
 
               {/* </>} /> */}
             </Routes>
-            <Footer isDarkMode={isDarkMode} />
+            <Footer  />
           </div>
         </div>
       </div>

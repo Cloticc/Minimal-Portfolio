@@ -5,7 +5,7 @@ interface ContextState {
   setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const MyContext = createContext<ContextState | undefined>(undefined);
+export const MyContext = createContext<ContextState>({ isDarkMode: false, setIsDarkMode: () => {} }); 
 
 interface ChildrenProps {
   children: ReactNode;

@@ -11,7 +11,7 @@ function Information() {
         className="animate-fade-down w-full h-40 md:w-full md:h-60 object-cover mt-4 border-4 border-cyan-600 dark:border-cyan-600 absolute z-10 filter blur-sm"
       />
       <h1 className="animate-fade-down text-4xl md:text-7xl text-gray-200 dark:text-gray-200 mb-1 md:mb-5 font-Raleway tracking-tight z-20 relative translate-y-5 sm:translate-y-7">
-        Andreas Isidorsson
+        Andreas
       </h1>
       <p className="animate-fade-down text-1xl md:text-2xl mb-3 text-gray-200 dark:text-gray-200 font-Raleway z-20 relative translate-y-3 sm:translate-y-9">
         Under construction 🚧... System developer
