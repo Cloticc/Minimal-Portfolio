@@ -1,18 +1,18 @@
-import React, { createContext, useState } from 'react';
+import React, { FC, ReactNode, createContext, useState } from 'react';
 
-export const MyContext = createContext({} as any);
-
-
-
-interface ChildrenProps {
-  children: React.ReactNode;
+interface ContextState {
+  isDarkMode: boolean;
+  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const MyContextProvider = ({ children }: ChildrenProps) => {
+export const MyContext = createContext<ContextState | undefined>(undefined);
+
+interface ChildrenProps {
+  children: ReactNode;
+}
+
+export const MyContextProvider: FC<ChildrenProps> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
-
-
 
   const value = {
     isDarkMode,
@@ -25,5 +25,3 @@ export const MyContextProvider = ({ children }: ChildrenProps) => {
     </MyContext.Provider>
   );
 };
-
-

@@ -10,7 +10,7 @@ import Header from "./components/Header";
 import { MyContext } from "./context/MyContext";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
-import Shop from "./components/Shop";
+import Shop from "./pages//Shop";
 import Time from "./components/Time";
 import Title from "./components/Title";
 
